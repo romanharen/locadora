@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.absolutedev.locadora.CadastrarClientes">
+
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID:"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTipo"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/textViewTipo"
+        android:layout_width="39dp"
+        android:layout_height="0dp"
+        android:text="Tipo:"
+        app:layout_constraintRight_toLeftOf="@+id/radioButtonPF"
+        android:layout_marginRight="3dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/radioButtonPF"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintTop_toTopOf="@+id/radioButtonPF"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/radioButtonPF"
+        android:layout_width="145dp"
+        android:layout_height="22dp"
+        android:text="Pessoa Física"
+        app:layout_constraintRight_toLeftOf="@+id/radioButtonPJ"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toTopOf="@+id/radioButtonPJ" />
+
+    <RadioButton
+        android:id="@+id/radioButtonPJ"
+        android:layout_width="145dp"
+        android:layout_height="22dp"
+        android:text="Pessoa Jurídica"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCPFCNPJ"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/textViewCPFCNPJ"
+        android:layout_width="66dp"
+        android:layout_height="17dp"
+        android:text="CPF/CNPJ"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPFPJ"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <EditText
+        android:id="@+id/editTextPFPJ"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Digite o CPF/CNPJ"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNome"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNome"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/editTextNome" />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Digite o nome"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRenda"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/editTextPFPJ"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/editTextPFPJ" />
+
+    <TextView
+        android:id="@+id/textViewRenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Renda:"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerRenda"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerRenda"
+        android:layout_width="356dp"
+        android:layout_height="26dp"
+        android:dropDownWidth="match_parent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/textViewObs"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/textViewObs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Observações"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextObs"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextObs"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSalvar"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="salvar"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
