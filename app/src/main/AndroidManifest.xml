@@ -19,7 +19,9 @@
         <activity android:name=".ClientesActivity" />
         <activity android:name=".CadastrarClientes" />
         <activity android:name=".CarrosActivity" />
-        <activity android:name=".CadastrarCarrosActivity"></activity>
+        <activity android:name=".CadastrarCarros" />
+        <activity android:name=".VendedoresActivity" />
+        <activity android:name=".CadastrarVendedores"></activity>
     </application>
 
 </manifest>
