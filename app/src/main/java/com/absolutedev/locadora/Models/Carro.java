@@ -13,7 +13,7 @@ public class Carro implements Serializable {
     public int fabricante = 0;
     public boolean gasolina = false;
     public boolean etanol = false;
-    public Float preco;
+    public float preco;
 
     public Carro(String modelo, int ano, int fabricante, boolean gasolina, boolean etanol, Float preco){
         this.modelo = modelo;
@@ -85,7 +85,7 @@ public class Carro implements Serializable {
         return preco;
     }
 
-    public void setPreco(Float preco) {
+    public void setPreco(float preco) {
         this.preco = preco;
     }
 

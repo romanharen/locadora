@@ -39,7 +39,7 @@ public class LocadoraSQLHelper extends SQLiteOpenHelper {
                 "FABRICANTE INTEGER NOT NULL, " +
                 "GASOLINA INTEGER, " +
                 "ETANOL INTEGER, " +
-                "PRECO TEXT" +
+                "PRECO FLOAT" +
                 ") ");
 
         sqLiteDatabase.execSQL("CREATE TABLE " + TABELA_VENDEDORES + " (" +
